@@ -91,8 +91,8 @@ function stylesDist(){
 		.pipe(prefixer({
 			overrideBrowserslist: ['last 3 versions', 'ie >= 10']
 		}))
-		.pipe(sourcemaps.write())
 		.pipe(gulpGroupCssMediaQueries())
+		.pipe(sourcemaps.write())
 		.pipe(dest(path.dist.css))
 };
 function stylesLibs(){
