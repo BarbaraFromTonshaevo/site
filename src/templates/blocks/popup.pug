@@ -1,0 +1,16 @@
+//- Окно Заказать звонок
+.popup(id="order-call")
+	.popup__window
+		.popup__close
+		h2 Заказать звонок
+		h3 Заполните форму и наш менеджер свяжется с Вам
+		form(action="") 
+			div <!-- div drupal -->
+				input(type="text", required="required", placeholder="Ваше имя*").form__field
+
+			div.form-item--error <!-- div drupal -->
+				input(type="tel", required="required", placeholder="Телефон*").form__field.mask-tel
+				.form-item--error-message Требуется заполнить это поле
+
+			div <!-- div drupal -->
+				input(type="submit", value="Отправить").btn.form__btn
